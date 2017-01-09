@@ -1,0 +1,85 @@
+
+ .ribbon {
+    display:block;
+    position:relative;
+    width:450px;
+    height:56px;
+    padding-top:3px;
+    -moz-box-sizing:border-box;
+    box-sizing:border-box;
+    text-decoration:none;
+    cursor:pointer;
+    transition: all 0.1s ease;
+}
+.ribbon .btnn {
+    width:75%;
+    height:50px;
+    margin:0 auto;
+    border-radius:5px;
+    background-color:#e5d4c2;
+    line-height:50px;
+    text-align:center;
+    font-size:2.6em;
+    font-weight:400;
+    text-transform:none;
+    color:#2b2d3a;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    transition: all 0.1s ease;
+}
+.btnn:before, .btnn:after {
+    content:"";
+    display:block;
+    position:absolute;
+    width:25%;
+    height:0;
+    top:10px;
+    border-top: 18px solid  #d6c7b8;
+    border-bottom: 18px solid   #d6c7b8;
+    -webkit-transform:rotate(360deg);
+    -moz-transform:rotate(360deg);
+    -o-transform:rotate(360deg);
+    transform:rotate(360deg);
+    z-index:-1;
+    transition: all 0.2s ease;
+}
+.btnn:before {
+    left:0px;
+    border-left:12px solid rgba(255, 255, 255, 0);
+}
+.btnn:after {
+    right:0px;
+    border-right:12px solid rgba(255, 255, 255, 0);
+}
+/*Colors*/
+ .ribbon.green .btnn {
+    background-color:#1a6342;
+}
+.ribbon.green .btnn:before, .ribbon.green .btnn:after {
+    border-top-color:#044020;
+    border-bottom-color:#044020;
+}
+.ribbon.orange .btnn {
+    background-color:#cd4d00;
+}
+.ribbon.orange .btnn:before, .ribbon.orange .btnn:after {
+    border-top-color:#893d10;
+    border-bottom-color:#893d10;
+}
+/*Hover*/
+ .ribbon:hover {
+    padding-top:0;
+}
+.ribbon:hover .btnn {
+    height:56px;
+    width:77%;
+    line-height:56px;
+    font-size:2em;
+    top:0px;
+}
+.ribbon:hover .btnn:before {
+    left:5%;
+}
+.ribbon:hover .btnn:after {
+    right:5%;
+}

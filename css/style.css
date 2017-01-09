@@ -1,0 +1,162 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+body {
+  margin: 0;
+  background-color:#2b2d3a;
+}
+
+#menu {
+  position:fixed;
+  top:0px;
+  width:100%; 
+  height:75px; 
+  background-color: transparent;
+  color: #FFFFFF;
+  z-index:9999;
+  display: none;
+}
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+p {
+  line-height: 2rem;
+}
+
+.awesome-icon{
+  color: #FFFFFF;
+  font-size: 7em;
+}
+
+.trumpgothic{
+    font-family: "TrumpGothicEastW01Medium";
+}
+
+.trumpgothic_l{
+  font-family: "TrumpGothicEastW01Medium";
+  font-size: 3em;
+}
+
+.trumpgothic_b{
+    font-family: "TrumpGothicEastW01Medium";
+    font-size:2em;
+}
+
+.humanstlight_m{
+  font-family:"Humanst521LtBTLight";
+  font-size: 1.2em;
+}
+
+.humanstlight_slider{
+  font-family:"Humanst521LtBTLight";
+  font-size: 7em;
+}
+
+.humanstlight{
+  font-family:"Humanst521LtBTLight";
+}
+
+.humanstlight_but{
+  font-family:"Humanst521LtBTLight";
+  font-size: 1.5em;
+  color: black;
+  background-color:#36a567;
+}
+
+.humanstlight_m{
+  font-family:"Humanst521LtBTLight";
+  font-size: 1.5em;
+}
+
+.button-collapse {
+  color: #2b2d3a;
+}
+
+#logo-container{
+margin-top: 2px;
+}
+
+.parallax-container {
+  min-height: 700px;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+  .parallax-container .section {
+    width: 100%;
+  }
+
+@font-face{
+  font-family: "Humanst521LtBTLight";
+  src: url("../fonts/Humanst521LtBTLight/Humanst521LtBTLighteot") format("embedded-opentype"),
+  url("../fonts/Humanst521LtBTLight/Humanst521LtBTLight.woff2") format("woff2"),
+  url("../fonts/Humanst521LtBTLight/Humanst521LtBTLight.woff") format("woff"),
+  url("../fonts/Humanst521LtBTLight/Humanst521LtBTLight.ttf") format("truetype"),
+  url("../fonts/Humanst521LtBTLight/Humanst521LtBTLight.svg") format("svg");
+
+}
+
+@font-face {
+    font-family: "TrumpGothicEastW01Medium";
+    src: url("../fonts/TrumpGothicEastW01Medium/TrumpGothicEastW01Mediumeot") format("embedded-opentype"),
+    url("../fonts/TrumpGothicEastW01Medium/TrumpGothicEastW01Medium.woff2") format("woff2"),
+    url("../fonts/TrumpGothicEastW01Medium/TrumpGothicEastW01Medium.woff") format("woff"),
+    url("../fonts/TrumpGothicEastW01Medium/TrumpGothicEastW01Medium.ttf") format("truetype"),
+    url("../fonts/TrumpGothicEastW01Medium/TrumpGothicEastW01Medium.svg") format("svg");
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+  #index-banner .section {
+    top: 0;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+  margin-top: 5%;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
+
+.darkblue{
+  background-color: #090f23;
+}
+
+.right > img {
+  float:right;
+}
+
+.circle{
+  border-radius: 100%;
+}
+
+.bege{
+  color:#e5d4c2;
+}
+
+.fotomin{
+  min-height: 500px;
+}
