@@ -200,7 +200,34 @@
     <div class="section no-pad-bot">
       <div class="container">
         <div class="row col s12 m6 l6">
-          <h5 class="header humanstlight">Fale Conosco</h5>
+          <h2 class="header humanstlight_fc">Fale Conosco</h2>
+          <p class="humanstlight_fcd dblue">Sentiu alguma dúvida, ou possui alguma sugestão? <br>Fale com a gente! Teremos o prazer em lhe ajudar.</p>
+          <form id="contac-form" action="email.php" method="post" name="contactform">
+            <div class="col s12 m6 l6">
+              <div id="name_error" class="error"><img src="img/email/error.png" alt="Error!">
+                "Por favor, escreva seu nome!"
+              </div>
+              <input id="name" class="form-control" name="name" type="text" placeholder="Seu nome" required>
+
+              <div id="email_error" class="error"><img src="img/email/error.png" alt="Error!">Por favor, digite um email valido. s2.</div>
+              <input id="email" class="form-control" name="email" type="email" placeholder="Seu email" required>
+
+              <div id="subject_error" class="error"><img src="img/email/error.png" alt="Error!">Coloque o assunto da mensagem.</div>
+              <input id="subject" class="form-control" name="subject" type="text" placeholder="Assunto" required>
+
+              <div id="message_error" class="error"><img src="img/email/error.png" alt="Error!">Por favor, escreva a mensagem aqui.</div>
+              <textarea id="your_message" class="materialize-textarea" name="your_message" placeholder="Sua Mensagem" rows="4" required></textarea>
+
+               <div class="input-field col s12">
+          <textarea id="textarea1" class="materialize-textarea"></textarea>
+          <label for="textarea1">Textarea</label>
+        </div>
+                  
+              <div id="submit">
+                <button type="submit" id="send_message" class="btn btn-sm btn-default full-width btn-effect">Enviar Mensagem</button>
+              </div>
+            </div>
+          </form>
         </div>
       </div>
     </div>

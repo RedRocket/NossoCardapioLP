@@ -64,6 +64,18 @@ p {
   font-family:"Humanst521LtBTLight";
 }
 
+.humanstlight_fc{
+  font-family:"Humanst521LtBTLight";
+  font-size: 3em;
+  color:#090f23;
+}
+
+.humanstlight_fcd{
+  font-family:"Humanst521LtBTLight";
+  font-size: 1.8em;
+  color:#090f23;
+}
+
 .humanstlight_but{
   font-family:"Humanst521LtBTLight";
   font-size: 1.5em;
@@ -161,3 +173,17 @@ footer.page-footer {
   min-height: 500px;
 }
   
+.dblue{
+  color:#090f23;
+}
+
+.error{
+  display: none;
+  padding: 10px;
+  margin: 0 0 5px 0;
+  color: #D8000C;
+  font-size:12px;
+  background-color: #FFBABA;
+}
+
+
