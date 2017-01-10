@@ -7,11 +7,11 @@
 
   <!-- Descrição do site
   =================================================== -->
-  <meta name="description" content="">
+  <meta name="description" content="Encontrer as melhores promoções!">
 
   <!-- Keywords
   =================================================== -->
-  <meta name="keywords" content="">
+  <meta name="keywords" content="promoção">
 
   <!-- Favicons
   =================================================== -->
@@ -36,44 +36,46 @@
 
 <body>
 
-  <!-- Menu Area -->
-  <nav class="white" role="navigation" >
-    <div class="nav-wrapper container " >
-      <a id="logo-container" href="index.html" class="brand-logo"><img src="img/logo_nc.png" width = "180" ></a>
-      <ul class="right hide-on-med-and-down humanstligh">
-        <li><a href="#index-banner">Início</a></li>
-        <li><a href="#passo-a-passo">Sobre</a></li>
-        <li><a href="#">Parceiros</a></li>
-        <li><a href="#">Fale Conosco</a></li>
-      </ul>
+  <header class="header-background">
+    <!-- Menu Area -->
+    <nav id ="menu" class="white" role="navigation" >
+      <div class="nav-wrapper container " >
+        <a id="logo-container" href="index.html" class="brand-logo"><img src="img/logo_nc.png" width = "180" ></a>
+        <ul class="right hide-on-med-and-down humanstlight_m">
+          <li><a href="#index-banner"><b>Início</b></a></li>
+          <li><a href="#passo-a-passo"><b>Sobre</b></a></li>
+          <li><a href="#parceiros"><b>Parceiros</b></a></li>
+          <li><a href="#fale-conosco"><b>Fale Conosco</b></a></li>
+        </ul>
 
-      <ul id="nav-mobile" class="side-nav humanstligh">
-         <li><a href="#index-banner">Início</a></li>
-        <li><a href="#passo-a-passo">Sobre</a></li>
-        <li><a href="#">Parceiros</a></li>
-        <li><a href="#">Fale Conosco</a></li>
-      </ul>
-      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+        <ul id="nav-mobile" class="side-nav humanstligh">
+           <li><a href="#index-banner">Início</a></li>
+          <li><a href="#passo-a-passo">Sobre</a></li>
+          <li><a href="#parceiros">Parceiros</a></li>
+          <li><a href="#fale-conosco">Fale Conosco</a></li>
+        </ul>
+        <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+      </div>
+    </nav>
+    <!-- Fim do Menu -->
+
+  <!-- Inicia seção Slide -->
+
+    <div id="index-banner" class="parallax-container valign-wrapper">
+      <div class="parallax"></div>
+      <div class="section no-pad-bot">
+        <div class="container">
+          <br><br>
+          <h1 class="header center text-lighten-2 humanstlight_slider"><b>Encontre as melhores<br>promoções de sua cidade!
+          </b></h1>
+        </div>
+        <div class="row center">
+            <a href="#passo-a-passo" id="next-toppic" class="awesome-icon" ><i class="fa fa-angle-down" aria-hidden="true"></i></a>
+        </div>
+       </div>
+
     </div>
-  </nav>
-  <!-- Fim do Menu -->
-
-<!-- Inicia seção Slide -->
-
-  <div id="index-banner" class="parallax-container valign-wrapper">
-    <div class="parallax"><img src="img/background/slide_nc.png" alt="Unsplashed background img 1"></div>
-    <div class="section no-pad-bot">
-      <div class="container">
-        <br><br>
-        <h1 class="header center text-lighten-2 humanstlight_slider"><b>Encontre as melhores<br>promoções de sua cidade!
-        </b></h1>
-      </div>
-      <div class="row center">
-          <a href="#passo-a-passo" id="next-toppic" class="awesome-icon" ><i class="fa fa-angle-down" aria-hidden="true"></i></a>
-      </div>
-     </div>
-
-  </div>
+  </header>  
 
 <!-- Termina a seção slide -->
 
@@ -165,7 +167,7 @@
   <!-- Fim do Baixe o Aplicativo-->
 
 <!-- Início Parceiros-->
-  <div class="container">
+  <div id="parceiros" class="container">
     <div class="section">
       <div class="row">
         <div class="col s12 center">
@@ -217,14 +219,9 @@
 
               <div id="message_error" class="error"><img src="img/email/error.png" alt="Error!">Por favor, escreva a mensagem aqui.</div>
               <textarea id="your_message" class="materialize-textarea" name="your_message" placeholder="Sua Mensagem" rows="4" required></textarea>
-
-               <div class="input-field col s12">
-          <textarea id="textarea1" class="materialize-textarea"></textarea>
-          <label for="textarea1">Textarea</label>
-        </div>
                   
-              <div id="submit">
-                <button type="submit" id="send_message" class="btn btn-sm btn-default full-width btn-effect">Enviar Mensagem</button>
+              <div id="submit" >
+                <button type="submit" id="send_message" class="btn btn-sm btn-default full-width btn-effect col s12 m6 l6">Enviar Mensagem</button>
               </div>
             </div>
           </form>
@@ -263,6 +260,5 @@
   <script src="https://code.jquery.com/jquery-2.1.1.min.js"></script>
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
-
   </body>
 </html>
