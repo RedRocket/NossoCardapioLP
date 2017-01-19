@@ -39,7 +39,8 @@
 
   <header class="header-background">
     <!-- Menu Area -->
-    <nav id ="menu" class="white" role="navigation" >
+
+    <nav id ="menu" class="transp" role="navigation" >
       <div class="nav-wrapper container " >
         <a id="logo-container" href="index.html" class="brand-logo"><img src="img/logo_nc.png" width = "180" ></a>
         <ul class="right hide-on-med-and-down humanstlight_m">
@@ -206,8 +207,8 @@
           <h2 class="header humanstlight_fc">Fale Conosco</h2>
           <p class="humanstlight_fcd dblue">Sentiu alguma dúvida, ou possui alguma sugestão? <br>Fale com a gente! Teremos o prazer em lhe ajudar.</p>
 
-          <div class="row col s12 m12 l6">
-          <form >
+          <div class="col s12 m12 l6">
+          <form id="formemail">
 
               <div class="input-field border">
                 <input placeholder="Nome" id="name" name="name" type="text" class="validate">
@@ -235,8 +236,9 @@
                     <i class="material-icons right">send</i>
                 </button>
               </div>
-
             </form>
+
+            <!--<textarea id ="textarea1" name="message" form="formemail" placeholder="Mensagem" length="120"></textarea>-->
           </div>
         </div>
       </div>
@@ -276,14 +278,17 @@
   <script src="js/init.js"></script>
   <script src="http://code.jquery.com/jquery-latest.js"></script>
 
+
   <script type="text/javascript">
     (function($) {          
         $(document).ready(function(){                    
             $(window).scroll(function(){                          
-                if ($(this).scrollTop() > 200) {
-                    $('#menu').fadeIn(500);
+                if ($(this).scrollTop() > 100) {
+                    $('#menu').removeClass("transp");
+                    $('#menu').addClass("white");
                 } else {
-                    $('#menu').fadeOut(500);
+                    $('#menu').removeClass("white");
+                    $('#menu').addClass("transp");
                 }
             });
         });

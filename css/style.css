@@ -19,7 +19,7 @@ body {
   background-color:#DDDDDD;
   color: #FFFFFF;
   z-index:9999;
-  display: none;
+  transition: all 0.5s ease;
 }
 
 nav ul a,
@@ -258,4 +258,42 @@ textarea.materialize-textarea {
   letter-spacing: .5px;
   transition: .2s ease-out;
   cursor: pointer;
+}
+
+.transp{
+  background-color: transparent !important;
+}
+
+.btn:hover, .btn-large:hover {
+  background-color: #3fc379;
+}
+
+input:not([type]):focus:not([readonly]),
+input[type=text]:focus:not([readonly]),
+input[type=password]:focus:not([readonly]),
+input[type=email]:focus:not([readonly]),
+input[type=url]:focus:not([readonly]),
+input[type=time]:focus:not([readonly]),
+input[type=date]:focus:not([readonly]),
+input[type=datetime]:focus:not([readonly]),
+input[type=datetime-local]:focus:not([readonly]),
+input[type=tel]:focus:not([readonly]),
+input[type=number]:focus:not([readonly]),
+input[type=search]:focus:not([readonly]),
+textarea.materialize-textarea:focus:not([readonly]) {
+  border-bottom: none;
+  box-shadow: none;
+}
+
+::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+  color: #090f23;
+}
+::-moz-placeholder { /* Firefox 19+ */
+  color: #090f23;
+}
+:-ms-input-placeholder { /* IE 10+ */
+  color: #090f23;
+}
+:-moz-placeholder { /* Firefox 18- */
+  color: #090f23;
 }
