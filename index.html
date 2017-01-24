@@ -7,7 +7,7 @@
 
   <!-- Descrição do site
   =================================================== -->
-  <meta name="description" content="Encontrer as melhores promoções!">
+  <meta name="description" content="Encontre as melhores promoções!">
 
   <!-- Keywords
   =================================================== -->
@@ -43,11 +43,11 @@
     <nav id ="menu" class="transp" role="navigation" >
       <div class="nav-wrapper container">
         <a id="logo-container" href="#"><img src="img/logo_nc.png" class="brand-logo"></a>
-        <ul class="right hide-on-med-and-down humanstlight_m">
-          <li><a href="#index-banner"><b>Início</b></a></li>
-          <li><a href="#passo-a-passo"><b>Sobre</b></a></li>
-          <li><a href="#parceiros"><b>Parceiros</b></a></li>
-          <li><a href="#fale-conosco"><b>Fale Conosco</b></a></li>
+        <ul class="right hide-on-med-and-down humanstlight_md">
+          <li><a class="menuoption scroll" href="#index-banner"><b>Início</b></a></li>
+          <li><a class="menuoption scroll" href="#passo-a-passo"><b>Sobre</b></a></li>
+          <li><a class="menuoption scroll" href="#parceiros"><b>Parceiros</b></a></li>
+          <li><a class="menuoption scroll" href="#fale-conosco"><b>Fale Conosco</b></a></li>
         </ul>
 
         <ul id="nav-mobile" class="side-nav humanstligh">
@@ -78,7 +78,6 @@
             <a href="#passo-a-passo" id="next-toppic" class="awesome-icon" ><i class="fa fa-angle-down" aria-hidden="true"></i></a>
         </div>
        </div>
-
     </div>
   </header>  
 
@@ -172,10 +171,10 @@
   <!-- Fim do Baixe o Aplicativo-->
 
 <!-- Início Parceiros-->
-  <div id="parceiros" class="container">
+  <div  class="container">
     <div class="section">
       <div class="row">
-        <div class="col s12 center">
+        <div id="parceiros" class="col s12 center">
           <h4 class="trumpgothic_l">Benefícios</h4>
           <p class="center humanstlight_m">Venha fazer parte do nosso aplicativo!</p>
         </div>
@@ -187,8 +186,8 @@
                 <li class="humanstlight_m"><img src="img/icones/check.png"> Divulgação online do restaurante</li><br>
               </ul>
         </div>
-        <div class="col s12 m6 right">
-          <img src="img/beneficios.png">
+        <div id="beneficios" class="col s12 m6 right">
+          <img id="beneficiosimg" src="img/beneficios.png">
         </div>
 
         <div class="col s12 center">
@@ -211,7 +210,7 @@
           <p class="humanstlight_fcd dblue">Sentiu alguma dúvida, ou possui alguma sugestão? <br>Fale com a gente! Teremos o prazer em lhe ajudar.</p>
 
           <div class="col s12 m12 l6">
-          <form id="formemail">
+          <form id="formemail" method="post">
 
               <div class="input-field border">
                 <input placeholder="Nome" id="name" name="name" type="text" class="validate">
@@ -226,7 +225,8 @@
               </div>
 
               <div class="input-field border" >
-                <input placeholder="Mensagem" id="message" name="message" type="text" class="validate">
+               <!-- <textarea rows="5" name="message" cols="30"></textarea><br>-->                
+               <input placeholder="Mensagem" id="message" name="message" type="text" rows="5" cols="30" class="validate">
               </div>
 
               <div class="message">
@@ -234,9 +234,8 @@
                 <p class="email-failed"><i class="fa fa-close"></i> Sua mensagem não pôde ser enviada. Aconteceu algo de errado.</p>
               </div>
               
-              <div class="row">
-                 <button class="btn waves-effect waves-light" type="submit" name="action">Enviar
-                    <i class="material-icons right">send</i>
+              <div id="button1" class="row">
+                 <button class="btn waves-effect waves-light buttonsubmit" type="submit" name="action" value="Submit">Enviar
                 </button>
               </div>
             </form>
@@ -280,23 +279,56 @@
   <script src="js/materialize.js"></script>
   <script src="js/init.js"></script>
   <script src="http://code.jquery.com/jquery-latest.js"></script>
+  <script type='text/javascript' src='http://ajax.googleapis.com/ajax/libs/jquery/1.4.3/jquery.min.js'></script>
 
+  <!-- Chatra {literal} -->
+  <script>
+      (function(d, w, c) {
+          w.ChatraID = 'xxPqDgpEDuP8pfwgn';
+          var s = d.createElement('script');
+          w[c] = w[c] || function() {
+              (w[c].q = w[c].q || []).push(arguments);
+          };
+          s.async = true;
+          s.src = (d.location.protocol === 'https:' ? 'https:': 'http:')
+          + '//call.chatra.io/chatra.js';
+          if (d.head) d.head.appendChild(s);
+      })(document, window, 'Chatra');
+  </script>
+<!-- /Chatra {/literal}-->
 
+<!-- Efeito do menu-->
   <script type="text/javascript">
     (function($) {          
         $(document).ready(function(){                    
             $(window).scroll(function(){                          
                 if ($(this).scrollTop() > 100) {
                     $('#menu').removeClass("transp");
+                    $('.menuoption').removeClass("humanstlight_md");
                     $('#menu').addClass("white");
+                    $('.menuoption').addClass("humanstlight_mblack");
                 } else {
                     $('#menu').removeClass("white");
                     $('#menu').addClass("transp");
+                    $('.menuoption').removeClass("humanstlight_mblack");
+                    $('.menuoption').addClass("humanstlight_md");
                 }
             });
         });
     })(jQuery);
   </script>
+  <!-- Fim do efeito do menu-->
+
+  <!-- Efeito de barra de rolagem-->
+  <script type="text/javascript">
+  jQuery(document).ready(function($) { 
+      $(".scroll").click(function(event){        
+          event.preventDefault();
+          $('html,body').animate({scrollTop:$(this.hash).offset().top}, 500);
+     });
+  });
+  </script>
+<!-- Fim do efeito de barra de rolagem-->
 
   </body>
 </html>

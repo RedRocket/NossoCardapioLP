@@ -50,7 +50,7 @@ p {
     font-size:2em;
 }
 
-.humanstlight_m{
+.humanstlight_md{
   font-family:"Humanst521LtBTLight";
   font-size: 1.2em;
 }
@@ -88,6 +88,12 @@ p {
   font-size: 1.5em;
 }
 
+.humanstlight_mblack{
+  font-family:"Humanst521LtBTLight";
+  font-size: 1.2em;
+  color: #2b2d3a;
+}
+
 .button-collapse {
   color: #2b2d3a;
 }
@@ -97,7 +103,7 @@ margin-top: 2px;
 }
 
 .parallax-container {
-  min-height: 700px;
+  min-height: 750px;
   line-height: 0;
   height: auto;
   color: rgba(255,255,255,.9);
@@ -126,19 +132,28 @@ margin-top: 2px;
 }
 
 @media only screen and (max-width : 992px) {
-  .parallax-container .section {
-    position: absolute;
-    top: 40%;
-  }
-  #index-banner .section {
-    top: 10%;
-  }
-}
+    .parallax-container .section {
+      position: absolute;
+      margin-top: 35px;
+    }
+    
+    #index-banner .section {
+      top: 10%;
+    }
 
-@media only screen and (max-width : 600px) {
-  #index-banner .section {
-    top: 0;
+  .humanstlight_slider{
+    font-family:"Humanst521LtBTLight";
+    font-size: 4em;
   }
+
+  #beneficios{
+    text-align: center;
+  }
+
+  #beneficiosimg{
+      float: none;
+  }
+
 }
 
 .icon-block {
@@ -196,6 +211,7 @@ footer.page-footer {
   background-attachment: fixed;
   background-repeat: 'no-repeat';
   background-color: #fff;
+  height: 100%;
 }
 
 nav ul a{
@@ -216,7 +232,7 @@ nav ul a{
 }
 
 .border{
-  right: 2%;
+
   border: solid;
   border-width: 1px;
   border-color:#2b2d3a; 
@@ -296,4 +312,23 @@ textarea.materialize-textarea:focus:not([readonly]) {
 }
 :-moz-placeholder { /* Firefox 18- */
   color: #090f23;
+}
+
+.right {
+  float: right !important;
+}
+
+#button1{
+  margin-top: 15px;
+  width: 100%;
+  padding:0;
+}
+
+.buttonsubmit{
+  width:100%;
+  padding: 0;
+}
+
+.container .row{
+  margin:0;
 }
