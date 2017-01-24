@@ -31,7 +31,7 @@ function is_email_valid($email) {
 if( isset($name) && isset($email) && isset($subject) && isset($message) && is_email_valid($email) ) {
 
 	// Email will be send
-	$to = "saralonngren@gmail.com"; // Change with your email address
+	$to = "nossocardapionc@gmail.com"; // Change with your email address
 	$sub = "$subject - Site NossoCardapio"; // You can define email subject
 	// HTML Elements for Email Body
 	$body = <<<EOD
@@ -41,14 +41,14 @@ if( isset($name) && isset($email) && isset($subject) && isset($message) && is_em
 EOD;
 
 //Must end on first column
-	
+
 	$headers = "From: $name <$email>\r\n";
 	$headers .= 'MIME-Version: 1.0' . "\r\n";
 	$headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
 
    $mail->MsgHTML($body);
    $mail->set("to",array());
-   $mail->set("attachment",array()); 
+   $mail->set("attachment",array());
    $mail->Subject = $sub;
 
    $mail->AddAddress($to,'NossoCardapio');
